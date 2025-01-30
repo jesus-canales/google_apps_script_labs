@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <base target="_top">
+    <?!= HtmlService.createHtmlOutputFromFile('css').getContent(); ?>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Formulario de Contacto</h1>
+        <div class="form-group">
+            <form id="MyForm">
+
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="apellido">Apellidos:</label>
+                <input type="text" id="apellidos" name="apellidos" required>
+
+                <label for="email">Correo:</label>
+                <input type="text" id="email" name="email" required>
+
+                <label for="phone">Celular:</label>
+                <input type="text" id="phone" name="phone" required>
+
+                <div class="genero">
+                    <label for="genero">Género:</label>
+                    <label><input type="radio" name="genero" value="masculino" required>Masculino</label>
+                    <label><input type="radio" name="genero" value="femenino" required>Femenino</label>
+                </div>
+
+                <label for="carrera">Carrera de interés:</label>
+                <select id="carrera" name="carrera required">
+                    <option value="Seleccionar">Seleccionar</option>
+                    <option value="Gestión Agrícola">Gestión Agrícola</option>
+                    <option value="Análisis de Sistemas Empresariales">Análisis de Sistemas Empresariales</option>
+                </select>
+
+                <label for="mensaje">Déjanos tu consulta:</label>
+                <textarea id="consulta" name="consulta" rows="6" required></textarea>
+
+                <button type="submit">Enviar</button>
+
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
