@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <base target="_top">
+</head>
+
+<body>
+    <h1>Formulario de Consulta</h1>
+    <form id="MyForm"
+        action="URL deployed"
+        method="post">
+        <div id="datos-personales">
+            <label>Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <label>Apellidos:</label>
+            <input type="text" id="apellidos" name="apellidos" required>
+        </div>
+        <div id="datos-consulta">
+            <label>Carrera:</label>
+            <select id="carrera" name="carrera" required>
+                <option value="Seleccionar">Seleccionar</option>
+                <option value="Gestión Agrícola">Gestión Agrícola</option>
+                <option value="Análisis de Sistemas Empresariales">Análisis de Sistemas Empresariales</option>
+            </select>
+            <label>Consulta</label>
+            <textarea id="consulta" name="consulta" rows="5" required></textarea>
+        </div>
+        <div id="envio">
+            <button type="submit">Enviar</button>
+        </div>
+    </form>
+</body>
+
+</html>
